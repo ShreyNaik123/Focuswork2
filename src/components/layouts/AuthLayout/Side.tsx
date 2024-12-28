@@ -2,18 +2,18 @@ import { cloneElement } from 'react'
 import Logo from '@/components/template/Logo'
 import type { CommonProps } from '@/@types/common'
 import { useTranslation } from 'react-i18next'
-import { Swiper, SwiperSlide } from 'swiper/react'
+// import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/thumbs'
-import 'swiper/css/free-mode'
+// import 'swiper/css'
+// import 'swiper/css/pagination'
+// import 'swiper/css/thumbs'
+// import 'swiper/css/free-mode'
 
 // import required modules
-import { Autoplay, Pagination } from 'swiper/modules'
-import ErrorMessage from '@/components/ui/Locale/ErrorMessage'
-import { useAppSelector } from '@/store'
+// import { Autoplay, Pagination } from 'swiper/modules'
+// import ErrorMessage from '@/components/ui/Locale/ErrorMessage'
+// import { useAppSelector } from '@/store'
 
 interface SideProps extends CommonProps {
     content?: React.ReactNode
@@ -32,7 +32,7 @@ const Side = ({ children, content, ...rest }: SideProps) => {
             >
                 <Logo />
                 <div className="w-full h-full min-w-full mb-8">
-                    <Swiper
+                    {/* <Swiper
                         pagination={{
                             clickable: true,
                         }}
@@ -42,7 +42,7 @@ const Side = ({ children, content, ...rest }: SideProps) => {
                         }}
                         modules={[Pagination, Autoplay]}
                         className="w-full h-full min-w-full"
-                    ></Swiper>
+                    ></Swiper> */}
                 </div>
                 <p className="text-white">{t('copyright')}</p>
             </div>
